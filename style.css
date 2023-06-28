@@ -1,0 +1,51 @@
+body{
+	margin: 0;
+	min-height: 100vh;
+	font-family: Poppins, sans-serif !important;
+	background-color: darkblue;
+	background-image: linear-gradient(to bottom, darkblue, lightblue);
+}
+
+.list{
+	box-sizing: border-box;
+	padding: 40px;
+	margin: 10% auto;
+	width: 33%;
+	min-width: 300px;
+	height: fit-content;
+	min-height: 250px;
+	background-color: white;
+	border: double 5px black;
+}
+input{
+	width: 70%;
+	height: 2em;
+	background-color: lightgray;
+}
+.addButton{
+	font-size: 2em;
+	color: darkblue;
+	background-color: white;
+	font-weight: bold;
+	font-size: 1.8em;
+	border: none;
+	cursor: default;
+}
+.items{
+	padding: 15px;
+	font-size: 1.2em;
+}
+.addedItem{
+	margin: 5px 0;
+	cursor: pointer;
+}
+.deleteButton{
+	display: none;
+	background-color: white;
+	border: none;
+	cursor: pointer;
+}
+.deleteButton img{
+	width: 17px;
+	height: 17px;
+}
