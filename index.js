@@ -1,4 +1,3 @@
-// GET THE INPUT BOX
 const textBox = document.getElementsByTagName("input")[0];
 const addButton = document.getElementsByClassName("addButton")[0];
 const itemsList = document.getElementsByClassName("items")[0];
@@ -59,10 +58,11 @@ function updateStorage(){
 
 function readStorage(){
 	const storedItems = JSON.parse(localStorage.getItem("items"));
+	if(!storedItems){ return }
+
 	for(item of storedItems){
 		addItem(item.description,item.strikedItem);
 	}
-	console.log(storedItems);
 }
 
 
